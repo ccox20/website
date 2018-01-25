@@ -2,7 +2,8 @@
 
 body {
 	margin: 0;
-	font: 10pt/1.5em Computer Modern Sans Serif;
+/* 	font: 12pt/1.5em Computer Modern Sans; */
+    font: 12pt/1.5em Calibri;
 	background: #ccc;
 /*  	background-image: url('cahl_icon.jpg'); */
 /* 	background-position: 0px 0px; */
