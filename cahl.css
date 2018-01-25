@@ -47,7 +47,7 @@ table { border-collapse: collapse; }
 /* 	padding: 0px;		/*USE THIS IF NOT USING DIV#TOPBAR
 }*/
 
-div#container {width:1060px;
+div#container {width:1070px;
       margin:0 auto 0 auto;
       padding:8px;
       border: 3px solid #363636;
@@ -59,8 +59,10 @@ div#navbar {
 	background: clear;
 	width: 140px;
 	height: 300px;
-	padding: 20px 10px;
-	font: 12pt Computer Modern Sans Serif;
+/* 	padding: 20px 10px; */
+    padding: 20px 20px;
+/* 	font: 12pt Computer Modern Sans Serif; */
+    font: 15pt/1.5em Calibri;
 }
 
 div#main {
@@ -80,17 +82,17 @@ div#main {
 	text-decoration: none;
 	padding-bottom:7px;
 	padding-left: 20px;
-	padding-top: 7px;
+	padding-top: 5px;
 }
 
 #navbar a:hover {
 	color: #FFCD00;
-	background: url('arrow2_right.png') no-repeat 0 7px;
+	background: url('arrow2_right.png') no-repeat 0px 10px;
 }
 
 #navbar a:active {
 	color: #FFCD00;
-	background: url('arrow2_right.png') no-repeat 0 7px;
+	background: url('arrow2_right.png') no-repeat 0px 10px;
 }
 
 /*COLOR ACTIVATED WEBPAGE*/
