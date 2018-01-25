@@ -3,7 +3,8 @@
 body {
 	margin: 0;
 /* 	font: 12pt/1.5em Computer Modern Sans; */
-    font: 12pt/1.5em Calibri;
+    font: 11pt/1.5em Droid Sans;
+/*     font: 12pt/1.5em Calibri; */
 	background: #ccc;
 /*  	background-image: url('cahl_icon.jpg'); */
 /* 	background-position: 0px 0px; */
@@ -11,12 +12,14 @@ body {
 }
 
 h1 {
-	font-size: 18pt;
+	font-size: 17pt;
+/*     font-size: 18pt; */
 	font-weight: normal;
 }
 
 h2 {
-	font-size: 14pt;
+	font-size: 12pt;
+/*     font-size: 14pt; */
 	font-weight: normal;
 }
 
@@ -62,7 +65,8 @@ div#navbar {
 /* 	padding: 20px 10px; */
     padding: 20px 20px;
 /* 	font: 12pt Computer Modern Sans Serif; */
-    font: 15pt/1.5em Calibri;
+    font: 13pt/1.5em Droid Sans;
+/*     font: 14pt/1.5em Calibri; */
 }
 
 div#main {
