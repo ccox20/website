@@ -34,8 +34,8 @@ a {
 a:hover { text-decoration: underline; }
 a:link { color: #0040bf; }
 a:visited { color: #CF3824; }
-a:link:hover { color: #FFCD00; }
-a:visited:hover { color: #FFCD00; }
+a:link:hover { color: #89C1FF; }
+a:visited:hover { color: #FF8989; }
 a:link:active { color: #000; }
 
 table { border-collapse: collapse; }
@@ -81,7 +81,7 @@ div#main {
 
 #navbar a {
 	display: block;
-	color: white;
+    color: white;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding-bottom:7px;
@@ -90,18 +90,21 @@ div#main {
 }
 
 #navbar a:hover {
-	color: #FFCD00;
+/* 	color: #FFCD00; */
+    color: #89C1FF;
 	background: url('arrow2_right.png') no-repeat 0px 10px;
 }
 
 #navbar a:active {
-	color: #FFCD00;
+/* 	color: #FFCD00; */
+    color: #89C1FF;
 	background: url('arrow2_right.png') no-repeat 0px 10px;
 }
 
 /*COLOR ACTIVATED WEBPAGE*/
 #navbar a#selected {
-	color: #FFCD00;
+	/*color: #FFCD00;*/
+    color: #89C1FF;
 }
 
 /*#headerlink {
