@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+/* 	font: 12pt/1.5em Computer Modern Sans; */
+    font: 11pt/1.5em Droid Sans;
+/*     font: 12pt/1.5em Calibri; */
+	background: #ccc;
+/*  	background-image: url('cahl_icon.jpg'); */
+/* 	background-position: 0px 0px; */
+/* 	background-repeat: no-repeat; */
+}
+
+h1 {
+	font-size: 17pt;
+/*     font-size: 18pt; */
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 12pt;
+/*     font-size: 14pt; */
+	font-weight: normal;
+}
+
+p, li, td, th {
+	padding-left: 10px;
+}
+a {
+	text-decoration: none;
+	decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+a:link { color: #0040bf; }
+a:visited { color: #CF3824; }
+a:link:hover { color: #89C1FF; }
+a:visited:hover { color: #FF8989; }
+a:link:active { color: #000; }
+
+table { border-collapse: collapse; }
+
+/*div#topbar {
+	background: url('blue_fade_up.png') repeat-x 0 110px;
+	width: 1040px;
+}*/
+    
+/*div#header {
+	padding: 6px;	/*USE THIS IF USING DIV#TOPBAR
+/* 	padding: 0px;		/*USE THIS IF NOT USING DIV#TOPBAR
+}*/
+
+div#container {width:1070px;
+      margin:0 auto 0 auto;
+      padding:8px;
+      border: 3px solid #363636;
+      background: white;
+}
+
+div#navbar {
+	float: left;
+	background: clear;
+	width: 140px;
+	height: 300px;
+/* 	padding: 20px 10px; */
+    padding: 20px 20px;
+/* 	font: 12pt Computer Modern Sans Serif; */
+    font: 13pt/1.5em Droid Sans;
+/*     font: 14pt/1.5em Calibri; */
+}
+
+div#main {
+	width: 847px;
+	background: white;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+
+#navbar a {
+	display: block;
+    color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-bottom:7px;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+#navbar a:hover {
+/* 	color: #FFCD00; */
+    color: #89C1FF;
+	background: url('arrow2_right.png') no-repeat 0px 10px;
+}
+
+#navbar a:active {
+/* 	color: #FFCD00; */
+    color: #89C1FF;
+	background: url('arrow2_right.png') no-repeat 0px 10px;
+}
+
+/*COLOR ACTIVATED WEBPAGE*/
+#navbar a#selected {
+	/*color: #FFCD00;*/
+    color: #89C1FF;
+}
+
+/*#headerlink {
+	background-image: url('cahl_bdl_title2.png');
+	display: block;
+	height: 107px;
+	width: 1037px;
+}*/
+
+table.layout td {
+	padding: 0;
+	vertical-align: top;
+}
+
+table.layout td#navbartd {
+	background: url('metallic.png');
+}
+
+table.download td {
+	padding: 10px 0;
+    vertical-align: top;
+}
+table td.download a {
+	display: block;
+	background: url('document24x24.png') no-repeat;
+	width: 30px;
+	height: 31px;
+}
+table.download h2 { margin: .1em 0;}
+table td.download { padding: 10px 5px; }
+table td.download a:hover  { background: url('download24x24.png') no-repeat; }
+
+table.nodownload td {
+	padding: 10px 0;
+	vertical-align: top;
+}
+table td.nodownload a {
+	display: block;
+	/*background: url('document24x24.png') no-repeat;*/
+    background: url('document_icon.png') no-repeat;
+	width: 30px;
+	height: 31px;
+}
+table.nodownload h2 { margin: .1em 0;}
+table td.nodownload { padding: 10px 5px; }
+
+/*div#footbar {
+	background: url('shadowb.png') repeat-x 0px 0px;
+	width: 1057px;
+	height: 20px;
+}*/
+
+img.picture{
+	float: left;
+	border: 1px solid black;
+	margin-left: 0px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
