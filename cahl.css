@@ -1,41 +1,63 @@
 @charset "utf-8";
 
 body {
-	margin: 0;
-/* 	font: 12pt/1.5em Computer Modern Sans; */
-    font: 11pt/1.5em Droid Sans;
-/*     font: 12pt/1.5em Calibri; */
-	background: #ccc;
-/*  	background-image: url('cahl_icon.jpg'); */
-/* 	background-position: 0px 0px; */
-/* 	background-repeat: no-repeat; */
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    font: 11pt/1.5em Calibri;
+    font-weight: normal;
+    background: #ccc;
+    color: #292929;
 }
 
 h1 {
-	font-size: 17pt;
-/*     font-size: 18pt; */
+	font-size: 16pt;
 	font-weight: normal;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px solid black;
+    color: black;
 }
 
 h2 {
-	font-size: 12pt;
-/*     font-size: 14pt; */
+	font-size: 14pt;
 	font-weight: normal;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px solid black;
+    color: black;
 }
 
-p, li, td, th {
-	padding-left: 10px;
+li, td, th, tr {
+	padding-left: 100px;
+    padding-right: 100px;
 }
+
+p {
+	padding-left: 0px;
+    padding-right: 0px;
+}
+
 a {
 	text-decoration: none;
 	decoration: none;
 }
 
 a:hover { text-decoration: underline; }
-a:link { color: #0040bf; }
-a:visited { color: #CF3824; }
-a:link:hover { color: #89C1FF; }
-a:visited:hover { color: #FF8989; }
+a:link { color: #3B438E; }
+a:visited { color: #3B438E; }
+a:link:hover { color: #3B438E; }
+a:visited:hover { color: #3B438E; }
 a:link:active { color: #000; }
 
 table { border-collapse: collapse; }
@@ -50,36 +72,84 @@ table { border-collapse: collapse; }
 /* 	padding: 0px;		/*USE THIS IF NOT USING DIV#TOPBAR
 }*/
 
-div#container {width:1070px;
-      margin:0 auto 0 auto;
-      padding:8px;
-      border: 3px solid #363636;
-      background: white;
+div#container {
+    width:900px;
+    min-height: 100vh;
+    margin:0 auto 0 auto;
+    padding:0px;
+/*    border: 5px solid #363636;*/
+    border: 0px solid white;
+    background: white;
+/*     background: url('ccox_photo2.jpg') no-repeat 0px 0px; */
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-div#navbar {
+/*div#navbar {
 	float: left;
 	background: clear;
-	width: 140px;
+    width: 340px;
 	height: 300px;
-/* 	padding: 20px 10px; */
     padding: 20px 20px;
-/* 	font: 12pt Computer Modern Sans Serif; */
-    font: 13pt/1.5em Droid Sans;
-/*     font: 14pt/1.5em Calibri; */
+    font: 13pt/1.5em Calibri;
+ }*/
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+/*    background-color: #333; */
+    background-color: white;
+    overflow: hidden;
+    width: 900px;
+    border-bottom: 1px solid #ccc;
 }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    /*color: #f2f2f2;*/
+    color: black;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font: 12pt/1.5em Calibri;
+    font-weight: normal;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+/*    background-color: #ddd;*/
+/*    background-color: white;*/
+/*     color: #91A1C2; */
+    color: #8890D7;
+/*     border-top: 1px solid #d0d0d0; */
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: red;
+    color: white;
+}
+
+/*.topnav a.selected {
+    background-color: red;
+    color: white;
+}*/
+
 
 div#main {
-	width: 847px;
-	background: white;
+    float: left;
+    width: 900px;
+/*     height: 0px; */
+	background: orange;
 	background-repeat: no-repeat;
-	padding-left: 40px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-top: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
 }
 
-#navbar a {
+/*#navbar a {
 	display: block;
     color: white;
 	text-transform: uppercase;
@@ -87,25 +157,23 @@ div#main {
 	padding-bottom:7px;
 	padding-left: 20px;
 	padding-top: 5px;
-}
+}*/
 
-#navbar a:hover {
-/* 	color: #FFCD00; */
+/*#navbar a:hover {
     color: #89C1FF;
 	background: url('arrow2_right.png') no-repeat 0px 10px;
-}
+}*/
 
-#navbar a:active {
-/* 	color: #FFCD00; */
+/*#navbar a:active {
     color: #89C1FF;
 	background: url('arrow2_right.png') no-repeat 0px 10px;
-}
+}*/
 
 /*COLOR ACTIVATED WEBPAGE*/
-#navbar a#selected {
-	/*color: #FFCD00;*/
-    color: #89C1FF;
+#navbartd a#selected {
+    color: #8890D7;
 }
+
 
 /*#headerlink {
 	background-image: url('cahl_bdl_title2.png');
@@ -120,7 +188,31 @@ table.layout td {
 }
 
 table.layout td#navbartd {
-	background: url('metallic.png');
+	/*background: url('metallic.png');*/
+    background: red;
+}
+
+
+
+
+
+table.profile td {
+	padding: 10px 25px;
+    vertical-align: middle;
+}
+table td.profile a {
+	display: block;
+	background: url('ccox_photo2.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100%;
+    position: center;
+    top: 0%;
+    left: 0%;
+    width: 200px;
+    height: 200px;
+    margin-top: 0px; /* Half the height */
+    margin-left: 50px; /* Half the width */
 }
 
 table.download td {
@@ -157,11 +249,173 @@ table td.nodownload { padding: 10px 5px; }
 	height: 20px;
 }*/
 
-img.picture{
-	float: left;
-	border: 1px solid black;
+
+img.picture_profile{
+	float: center;
+	border: 0px solid black;
 	margin-left: 0px;
-	margin-right: 40px;
-	margin-bottom: 20px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+    border-radius: 100%;
+}
+}
+
+img.picture{
+	float: center;
+/* 	border: 1px solid black; */
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
 	margin-top: 0px;
 }
+
+img.picture2{
+	float: center;
+/* 	border: 1px solid black; */
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}.
+
+
+
+
+
+
+
+
+
+/*ANIMATE PICTURES*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 900px;
+    max-height: 350px;
+/*     background: gray; */
+}
+
+.slideshow-container > div {
+    
+}
+
+.slideshow-container > div > img {
+
+}
+
+
+/* ALIGN IMAGE VERTICALLY---------*/
+.slick-slide {
+    text-align: center;
+    margin-top: 0;
+}
+
+.slick-slide::before {
+    content: '';
+    display: inline-block;
+    height: 350px;
+    vertical-align: middle;
+}
+
+.slick-slide img {
+    vertical-align: middle;
+    display: inline-block;
+    max-height: 350px;
+}
+/*--------------------------------*/
+
+/* Hide the images by default */
+.mySlides {
+    display:table-cell;
+    height:350px;
+    vertical-align: middle;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 2.0s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black; /*#f2f2f2;*/
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black; /*#f2f2f2;*/
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 2.0s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+

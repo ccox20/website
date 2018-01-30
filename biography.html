@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta name="google-site-verification" content="8qCPAFkrbQbDrMDqvA7fVIClbFQ7eAXOw40NLOg54xA" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ccox bio</title>
+    <link rel="stylesheet" type="text/css" href="cahl.css">
+    <link rel="icon" type="image/ico" href="ccox_icon.jpg">
+    <link rel="shortcut icon" href="ccox_icon.jpg">
+</head>
+
+<body>
+<div align="center">
+<div id="container">
+    <div id="topbar">
+        <a title="ccox" id="headerlink"></a>
+        <div id="header"></div>
+    </div>
+    
+    <table class="layout">
+    <tbody>
+    <tr>
+        <td id="navbartd">
+            <div class="topnav">
+<!--                 <a href="http://www.gwu.edu/">GWU</a> -->
+<!--                 <a href="http://mae.seas.gwu.edu/">MAE</a> -->
+<!--                 <a href="http://cobweb.seas.gwu.edu/~bdlabs/">BDL</a> -->
+<!--                 <a href="http://home.gwu.edu/~chliang/">CAHL</a> -->
+<!--                 <a href="contact.html">CONTACT</a> -->
+                <a href="cv_ccox.pdf">CV</a>
+                <a href="publications.html">PUBLICATIONS</a>
+                <a href="research.html">RESEARCH</a>
+                <a href="biography.html" id="selected">BIO</a>
+                <a href="index.html">HOME</a>
+            </div>
+
+            <!--<div id="navbar">
+                <a href="index.html" id="selected">BIO</a>
+                <a href="publications.html">PUBLICATIONS</a>
+                <a href="http://home.gwu.edu/~chliang/">CAHL</a>
+                <a href="http://cobweb.seas.gwu.edu/~bdlabs/">BDL</a>
+                <a href="http://mae.seas.gwu.edu/">MAE</a>
+                <a href="http://www.gwu.edu/">GWU</a>
+            </div>-->
+        </td>
+        
+        <div id="main">
+        <table>
+        <tbody>
+        
+        
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+            
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade" align="center">
+                    <div class="numbertext"></div>
+                    <figure class="slick-slide">
+                        <img src="pipe_geometry.png" class="picture" height=350px>
+                    </figure>
+                    <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade" align="center">
+                    <div class="numbertext"></div>
+                    <figure class="slick-slide">
+                        <img src="lambda2_isosurface_L2-24_t25.png" class="picture" height=350px>
+                    </figure>
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade" align="center">
+                    <div class="numbertext"></div>
+                    <figure class="slick-slide">
+                        <img src="streamlines_dean_wec_t23_d.png" class="picture" height=350px>
+                    </figure>
+                    <div class="text"></div>
+                </div>
+
+                <!-- Next and previous buttons -->
+<!--            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
+<!--            <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+                
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            
+            <script type-"text/javascript">
+            
+                var slideIndex = 0;
+                //showSlides(slideIndex);
+                showSlides2();
+                
+                // Next/previous controls
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+                
+                //STATIC/ON-CLICK SLIDESHOW
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    
+                    if (n > slides.length) {slideIndex = 1} 
+                    if (n < 1) {slideIndex = slides.length}
+                    
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none"; 
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    
+                    slides[slideIndex-1].style.display = "block"; 
+                    dots[slideIndex-1].className += " active";
+                }
+
+                //ANIMATING SLIDESHOW IMAGES
+                function showSlides2() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none"; 
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1} 
+                    
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    
+                    var myTimer = setTimeout(showSlides2, 8000);
+                }
+            </script>
+            
+            <tr>
+            <td>
+                <br>
+                <h2>Education</h2>
+                    PhD, <a href="http://www.mae.seas.gwu.edu/">Mechanical &amp; Aerospace Engineering</a>, <a href="http://www.gwu.edu/">The George Washington University</a>
+                    <table class="download">
+                        <tbody><tr>
+                        <td class="download"><a href="phd-ccox-final.pdf" title="dissertation-ccox"></a></td>
+                        <td><em>Development of a High-order Navier-Stokes Solver using Flux Reconstruction
+                                to Simulate Three-dimensional Vortex Structures in a Curved Artery Model</em></td>
+                        </tr></tbody>
+                    </table>
+                    
+                    MS, <a href="http://aa.stanford.edu/">Aeronautics &amp; Astronautics</a>, <a href="http://www.stanford.edu/">Stanford University</a><br>
+                    BS, <a href="http://mane.rpi.edu/">Aeronautical &amp; Mechanical Engineering</a>, <a href="http://www.rpi.edu/">Rensselaer Polytechnic Institute</a><br>
+                    <br>
+                    
+<!--                    <table class="download">-->
+<!--                        <tbody><tr>-->
+<!--                        <td class="download"><a href="cv_ccox.pdf" title="cv-ccox"></a></td>-->
+<!--                        <td><em>Curriculum vitae</em></td>-->
+<!--                        </tr></tbody>-->
+<!--<!--                         <a href="curved_pipe_iso_vorticity_fps2.avi">pulsatile_flow</a> -->
+<!--<!--                         <embed src="curved_pipe_iso_vorticity_fps2.swf" height=108 width=33% controller=false  -->
+<!--<!--                         autoplay=true playeveryframe=false pluginspage="oops.html" loop=palindrome>  -->
+<!--                    </table>-->
+<!--                    <br>-->
+                    
+                <h2>Awards &amp; Honors</h2>
+                    <p> <!-- <ul style="list-style-type:none"> -->
+<!--                     <ul> -->
+                    The George Washington University Presidential Merit Fellowship, 2011-2017<br>
+                    The George Washington University Douglas L. Jones Endowed Scholarship, 2016-2017<br>
+                    The George Washington University Graduate Research Theoretical Award, 1st Place, 2015<br>
+                    ASME Pressure Vessel and Piping Division's Outstanding Technical Paper for Fluid-Structure Interaction, 2013<br>
+                    Stanford University Graduate Federal Research Assistantship Award, 2003-2005<br>
+                    Rensselaer Polytechnic Institute Donald V. Edwards Endowed Engineering Scholarship, 1998-2002<br>
+                    Rensselaer Polytechnic Institute Dean's Scholarship, 1998-2002<br>
+                    Sigma Gamma Tau National Aerospace Engineering Honor Society, 2000<br>
+                    Pi Tau Sigma International Mechanical Engineering Honor Society, 2000<br>
+<!--                     </ul> -->
+                    </p>
+                    <br>
+                    
+                <h2>Academic Positions</h2>
+                    <p> <!-- <ul style="list-style-type:none"> -->
+<!--                     <ul> -->
+                    Postdoctoral Research Scientist, 2018-present<br>
+                        The George Washington University<br>
+                        Department of Mechanical &amp; Aerospace Engineering<br>
+                        <a href="http://home.gwu.edu/~chliang/">Computational Aero &amp; Hydrodynamics Laboratory</a><br>
+                        <a href="http://cobweb.seas.gwu.edu/~bdlabs/">Biofluid Dynamics Laboratory</a>
+                    <br><br>
+                    Graduate Research Assistant, 2011-2017<br>
+                        The George Washington University<br>
+                        Department of Mechanical &amp; Aerospace Engineering<br>
+                        <a href="http://home.gwu.edu/~chliang/">Computational Aero &amp; Hydrodynamics Laboratory</a><br>
+                        <a href="http://cobweb.seas.gwu.edu/~bdlabs/">Biofluid Dynamics Laboratory</a>
+                    <br><br>
+                    Research &amp; Development Engineer, 2005-2006<br>
+                        Stanford University<br>
+                        Department of Physics<br>
+                        <a href="http://hepl.stanford.edu/">Hansen Experimental Physics Laboratory</a>
+                    <br><br>
+                    Graduate Research Assistant, 2003-2005<br>
+                        Stanford University<br>
+                        Department of Aeronautics &amp; Astronautics<br>
+                        <a href="http://hepl.stanford.edu/">Hansen Experimental Physics Laboratory</a>
+                    <br><br>
+                    Undergraduate Research Assistant, 2002<br>
+                        Rensselaer Polytechnic Institute<br>
+                        Department of Mechanical, Aerospace and Nuclear Engineering<br>
+                        <a href="http://www.rpi.edu/~hirsaa/">Experimental Fluid Mechanics Laboratory</a>
+                    <br><br>
+<!--                     </ul> -->
+
+                    <p>
+                    <u>Teaching Assistant - The George Washington University</u>
+                    </p>
+<!--                     <ul> -->
+                    APSC 6213 (<em>graduate</em>), Analytical Methods in Engineering III - Partial Differential Equations, Fall 2014<br>
+                    APSC 6212 (<em>graduate</em>), Analytical Methods in Engineering II - Linear Algebra, Spring 2014<br>
+                    MAE 3126 (<em>undergraduate</em>), Fluid Mechanics I, Fall 2013 and Fall 2016<br>
+<!--                     </ul> -->
+                    </p>
+                    <br>
+                    
+                <h2>Industry Positions</h2>
+                    <p> <!-- <ul style="list-style-type:none"> -->
+<!--                     <ul> -->
+                    Quantitative Research Analyst, McGowan Investors, 2008-2010<br>
+                    Quantitative Research Analyst, Volare Capital Management, 2006-2008<br>
+                    Design &amp; Project Engineer, Pratt &amp; Whitney - United Technologies Corporation, 2001<br>
+<!--                     </ul> -->
+                    </p>
+                    <br>
+                    
+                <h2>Professional Activities</h2>
+                    <p> <!-- <ul style="list-style-type:none"> -->
+<!--                     <ul> -->
+                    Peer Reviewer, Journal of Computational Physics<br>
+                    Peer Reviewer, Journal of Computers & Fluids<br>
+                    Peer Reviewer, AIAA Aerospace Sience Meeting<br>
+                    Peer Reviewer, AIAA Aviation<br>
+                    Member, American Institute of Aeronautics and Astronautics<br>
+                    Member, American Physical Society<br>
+                    Session Chair, ASME Pressure Vessels and Piping Conference, 2012<br>
+                    Judge, The George Washington University SEAS R&amp;D Showcase, 2018<br>
+<!--                     </ul> -->
+                    </p>
+                    <br>
+                
+<!--                 <img src="cahl_group.jpg" class="picture" title="cahl_group" width=900px> -->
+
+            </td>
+            </tr>
+            
+<!--         </td> -->
+<!--         </tr> -->
+        </tbody>
+        </table>
+        </div>
+        
+    </tr>
+    </tbody>
+    </table>
+    
+    <div id="footbar"></div>
+    <!-- <a href="http://mae.seas.gwu.edu/"><img src="mae_logo.jpg" title="GW MAE"></a> -->
+    <!-- Keywords: cfd, high-order, incompressible flow, spectral difference, flux reconstruction,
+    LU-SGS implicit time stepping -->
+
+    <p>
+    <em>Last modified on: </em>
+    <script> document.write(document.lastModified); </script></br>
+    </p>
+    
+</div>
+</div>
+</body>
+</html>
