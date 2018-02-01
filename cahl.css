@@ -18,6 +18,7 @@ body {
     font-weight: normal;
     background: #ccc;
     color: #292929;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -62,52 +63,20 @@ a:link:active { color: #000; }
 
 table { border-collapse: collapse; }
 
-/*div#topbar {
-	background: url('blue_fade_up.png') repeat-x 0 110px;
-	width: 1040px;
-}*/
-    
-/*div#header {
-	padding: 6px;	/*USE THIS IF USING DIV#TOPBAR
-/* 	padding: 0px;		/*USE THIS IF NOT USING DIV#TOPBAR
-}*/
 
-div#container {
-    width:900px;
-    min-height: 100vh;
-    margin:0 auto 0 auto;
-    padding:0px;
-/*    border: 5px solid #363636;*/
-    border: 0px solid white;
-    background: white;
-/*     background: url('ccox_photo2.jpg') no-repeat 0px 0px; */
-    text-align: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/*div#navbar {
-	float: left;
-	background: clear;
-    width: 340px;
-	height: 300px;
-    padding: 20px 20px;
-    font: 13pt/1.5em Calibri;
- }*/
-
-
-/* Add a black background color to the top navigation */
-.topnav {
-/*    background-color: #333; */
+/* NAVIGATION BAR *************************************************************/
+#navbar {
     background-color: white;
     overflow: hidden;
     width: 900px;
+    border-top: 0px solid #ccc;
     border-bottom: 1px solid #ccc;
+    z-index: 10;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+/* Navbar links */
+#navbar a {
     float: right;
-    /*color: #f2f2f2;*/
     color: black;
     text-align: center;
     padding: 15px 15px;
@@ -116,31 +85,81 @@ div#container {
     font-weight: normal;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-/*    background-color: #ddd;*/
-/*    background-color: white;*/
-/*     color: #91A1C2; */
-    color: #8890D7;
-/*     border-top: 1px solid #d0d0d0; */
-}
-
 /* Add a color to the active/current link */
-.topnav a.active {
+.navbar a.active {
     background-color: red;
     color: white;
 }
 
-/*.topnav a.selected {
+.navbar a.selected {
     background-color: red;
     color: white;
+}
+
+.main {
+    margin-bottom: 100px; /* Add a top margin to avoid content overlay */
+}
+
+/* Page content */
+.content {
+  padding: 0px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#navbar a:hover {
+    color: #8890D7;
+}
+
+#navbar a#selected {
+    color: #8890D7;
+}
+
+table.layout td {
+    padding: 0;
+    vertical-align: top;
+} 
+
+/*table.layout td#navbartd {
+    padding: 0;
+    width: 900px;
+    position: fixed;
+    vertical-align: top;
+    background: green;
+    margin-top: 0px;
 }*/
 
 
+/* CONTAINER ******************************************************************/
+div#container {
+    width:900px;
+    min-height: 100vh;
+    margin:0 auto 0 auto;
+    padding:0px;
+    margin-top: 0px;
+/*     margin-left: 0px; */
+    border: 0px solid white;
+    background: white;
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* MAIN ******************************************************************/
 div#main {
     float: left;
     width: 900px;
-/*     height: 0px; */
 	background: orange;
 	background-repeat: no-repeat;
 	padding-left: 0px;
@@ -149,53 +168,9 @@ div#main {
 	padding-top: 0px;
 }
 
-/*#navbar a {
-	display: block;
-    color: white;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding-bottom:7px;
-	padding-left: 20px;
-	padding-top: 5px;
-}*/
-
-/*#navbar a:hover {
-    color: #89C1FF;
-	background: url('arrow2_right.png') no-repeat 0px 10px;
-}*/
-
-/*#navbar a:active {
-    color: #89C1FF;
-	background: url('arrow2_right.png') no-repeat 0px 10px;
-}*/
-
-/*COLOR ACTIVATED WEBPAGE*/
-#navbartd a#selected {
-    color: #8890D7;
-}
 
 
-/*#headerlink {
-	background-image: url('cahl_bdl_title2.png');
-	display: block;
-	height: 107px;
-	width: 1037px;
-}*/
-
-table.layout td {
-	padding: 0;
-	vertical-align: top;
-}
-
-table.layout td#navbartd {
-	/*background: url('metallic.png');*/
-    background: red;
-}
-
-
-
-
-
+/* PROFILE PICTURE ************************************************************/
 table.profile td {
 	padding: 10px 25px;
     vertical-align: middle;
@@ -215,6 +190,38 @@ table td.profile a {
     margin-left: 50px; /* Half the width */
 }
 
+img.picture_profile{
+    float: center;
+    border: 0px solid black;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-radius: 100%;
+}
+}
+
+img.picture{
+    float: center;
+/*  border: 1px solid black; */
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+img.picture2{
+    float: center;
+/*  border: 1px solid black; */
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+
+/* DOWLOAD ICONS** ************************************************************/
 table.download td {
 	padding: 10px 0;
     vertical-align: top;
@@ -243,73 +250,39 @@ table td.nodownload a {
 table.nodownload h2 { margin: .1em 0;}
 table td.nodownload { padding: 10px 5px; }
 
-/*div#footbar {
-	background: url('shadowb.png') repeat-x 0px 0px;
-	width: 1057px;
-	height: 20px;
-}*/
-
-
-img.picture_profile{
-	float: center;
-	border: 0px solid black;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-top: 0px;
-    border-radius: 100%;
-}
-}
-
-img.picture{
-	float: center;
-/* 	border: 1px solid black; */
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-top: 0px;
-}
-
-img.picture2{
-	float: center;
-/* 	border: 1px solid black; */
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-top: 0px;
-}.
 
 
 
-
-
-
-
-
-
-/*ANIMATE PICTURES*/
-* {box-sizing:border-box}
+/* SLIDE SHOW ANIMATION *******************************************************/
+/* * {box-sizing:border-box} */
 
 /* Slideshow container */
 .slideshow-container {
     max-width: 900px;
     max-height: 350px;
-/*     background: gray; */
 }
 
-.slideshow-container > div {
-    
+/*.slideshow-container > div {
+    margin-left:0;
+    margin-right:0;
+    margin-top:0px;
+    margin-right:0;
 }
 
 .slideshow-container > div > img {
+    position: absolute;
+    margin-left:0;
+    margin-right:0;
+    margin-top:0px;
+    margin-right:0;
+}*/
 
-}
-
-
-/* ALIGN IMAGE VERTICALLY---------*/
+/* ALIGN IMAGE VERTICALLY */
 .slick-slide {
     text-align: center;
-    margin-top: 0;
+    background-color: clear;
+    width:902px;
+    margin-left: -2px;
 }
 
 .slick-slide::before {
@@ -317,20 +290,33 @@ img.picture2{
     display: inline-block;
     height: 350px;
     vertical-align: middle;
+    margin-left:0px;
+    margin-right:0;
+    margin-top:0px;
+    margin-right:0;
 }
 
 .slick-slide img {
     vertical-align: middle;
     display: inline-block;
     max-height: 350px;
+    max-width: 100%;
+    margin-top: 0px;
 }
-/*--------------------------------*/
 
 /* Hide the images by default */
 .mySlides {
     display:table-cell;
     height:350px;
     vertical-align: middle;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
 }
 
 /* Next & previous buttons */
@@ -385,6 +371,7 @@ img.picture2{
   height: 15px;
   width: 15px;
   margin: 0 2px;
+  margin-top: 0px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -393,14 +380,6 @@ img.picture2{
 
 .active, .dot:hover {
   background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
-  animation-name: fade;
-  animation-duration: 3s;
 }
 
 @-webkit-keyframes fade {

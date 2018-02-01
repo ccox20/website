@@ -20,11 +20,13 @@
             
         }
     </style>
+    
 </head>
 
 <body>
 <div align="center">
 <div id="container">
+    
 	<div id="topbar">
 		<a title="ccox" id="headerlink"></a>
 		<div id="header"></div>
@@ -33,33 +35,35 @@
 	<table class="layout">
 	<tbody>
 	<tr>
-		<td id="navbartd">
-            <div class="topnav">
-<!--                 <a href="http://www.gwu.edu/">GWU</a> -->
-<!--                 <a href="http://mae.seas.gwu.edu/">MAE</a> -->
-<!--                 <a href="http://cobweb.seas.gwu.edu/~bdlabs/">BDL</a> -->
-<!--                 <a href="http://home.gwu.edu/~chliang/">CAHL</a> -->
-<!--                 <a href="contact.html">CONTACT</a> -->
-                <a href="cv_ccox.pdf">CV</a>
-                <a href="publications.html">PUBLICATIONS</a>
-                <a href="research.html">RESEARCH</a>
-                <a href="biography.html">BIO</a>
-                <a href="index.html" id="selected">HOME</a>
-            </div>
-
-            <!--<div id="navbar">
-                <a href="index.html" id="selected">BIO</a>
-                <a href="publications.html">PUBLICATIONS</a>
-                <a href="http://home.gwu.edu/~chliang/">CAHL</a>
-                <a href="http://cobweb.seas.gwu.edu/~bdlabs/">BDL</a>
-                <a href="http://mae.seas.gwu.edu/">MAE</a>
-                <a href="http://www.gwu.edu/">GWU</a>
-            </div>-->
-		</td>
+        <div class="navbar-wrapper" style="height:40px;">
+		<div id="navbar">
+            <a href="cv_ccox.pdf">CV</a>
+            <a href="publications.html">PUBLICATIONS</a>
+            <a href="research.html">RESEARCH</a>
+            <a href="biography.html">BIO</a>
+            <a href="index.html" id="selected">HOME</a>
+        </div>
+        </div>
 		
         <div id="main">
         <table>
         <tbody>
+            
+            <script type-"text/javascript">
+                window.onscroll = function() {myFunction()};
+
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+
+                function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+                }
+            </script>
+            
             <br>
             
             <tr>
@@ -201,6 +205,8 @@
     <script> document.write(document.lastModified); </script></br>
     </p>
     
+    
+
 </div>
 </div>
 </body>

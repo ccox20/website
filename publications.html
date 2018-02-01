@@ -21,61 +21,39 @@
     <table class="layout">
     <tbody>
     <tr>
-        <td id="navbartd">
-            <div class="topnav">
-<!--                 <a href="http://www.gwu.edu/">GWU</a> -->
-<!--                 <a href="http://mae.seas.gwu.edu/">MAE</a> -->
-<!--                 <a href="http://cobweb.seas.gwu.edu/~bdlabs/">BDL</a> -->
-<!--                 <a href="http://home.gwu.edu/~chliang/">CAHL</a> -->
-<!--                 <a href="contact.html">CONTACT</a> -->
-                <a href="cv_ccox.pdf">CV</a>
-                <a href="publications.html" id="selected">PUBLICATIONS</a>
-                <a href="research.html">RESEARCH</a>
-                <a href="biography.html">BIO</a>
-                <a href="index.html">HOME</a>
-            </div>
-
-            <!--<div id="navbar">
-                <a href="index.html" id="selected">BIO</a>
-                <a href="publications.html">PUBLICATIONS</a>
-                <a href="http://home.gwu.edu/~chliang/">CAHL</a>
-                <a href="http://cobweb.seas.gwu.edu/~bdlabs/">BDL</a>
-                <a href="http://mae.seas.gwu.edu/">MAE</a>
-                <a href="http://www.gwu.edu/">GWU</a>
-            </div>-->
-        </td>
+        <div class="navbar-wrapper" style="height:40px;">
+        <div id="navbar">
+            <a href="cv_ccox.pdf">CV</a>
+            <a href="publications.html" id="selected">PUBLICATIONS</a>
+            <a href="research.html">RESEARCH</a>
+            <a href="biography.html">BIO</a>
+            <a href="index.html">HOME</a>
+        </div>
+        </div>
         
         <div id="main">
         <table>
         <tbody>
-<!--         <tr> -->
-<!--         <td> -->
         
-            <!--<div style="width:480px;height:125px;position:relative;"/>
-            <div style="position:absolute; z-index:1;"/>
-                
-                <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
-                    codebase="http://download.macromedia.com/pub/shockwave/
-                    cabs/flash/swflash.cab#version=6,0,40,0"
-                    width="400" height="300"
-                        id="mymoviename3"/>
-                    <param name="movie3" 
-                    value="lambda2_18-30_slices.swf" />
-                    <param name="quality" value="high" />
-                    <param name="bgcolor" value="#ffffff" />
-                    <param name="wmode" value="transparent"/>
-                    <embed src="lambda2_18-30_slices.swf" quality="high" bgcolor="#ffffff"
-                    width="400" height="300"
-                    name="mymoviename3" align="" type="application/x-shockwave-flash"
-                    pluginspage="http://www.macromedia.com/go/getflashplayer"
-                    wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer"
-                    </embed>
-                </object>
-            </div>
-            
-            <div style="position:relative; z-index:2;"/>-->
-            
-<!--             <img src="ccox_photo2.jpg" class="picture" title="ccox" width=200px> -->
+            <script>
+            // When the user scrolls the page, execute myFunction 
+                window.onscroll = function() {myFunction()};
+
+                // Get the navbar
+                var navbar = document.getElementById("navbar");
+
+                // Get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+
+                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
 
             <!-- Slideshow container -->
             <div class="slideshow-container">
@@ -84,7 +62,7 @@
                 <div class="mySlides fade" align="center">
                     <div class="numbertext"></div>
                     <figure class="slick-slide">
-                        <img src="sphere_Re300_N5_l2iso_vmag_xy_mesh_b.png" class="picture" width=800px>
+                        <img src="sphere_Re300_N5_l2iso_vmag_xy_mesh_b.png" class="picture" width=898px>
                     </figure>
                     <div class="text"></div>
                     
@@ -93,7 +71,7 @@
                 <div class="mySlides fade" align="center">
                     <div class="numbertext"></div>
                     <figure class="slick-slide">
-                        <img src="sphere_Re300_N5_l2iso_vmag_xz_mesh_b.png" class="picture" width=800px>
+                        <img src="sphere_Re300_N5_l2iso_vmag_xz_mesh_b.png" class="picture" width=898px>
                     </figure>
                     <div class="text"></div>
                 </div>
@@ -101,7 +79,7 @@
                 <div class="mySlides fade" align="center">
                     <div class="numbertext"></div>
                     <figure class="slick-slide">
-                        <img src="sphere_Re300_N5_l2iso_vmag_xyz_b.png" class="picture" width=800px>
+                        <img src="sphere_Re300_N5_l2iso_vmag_xyz_b.png" class="picture" width=898px>
                     </figure>
                     <div class="text"></div>
                 </div>
@@ -182,22 +160,6 @@
             <tr>
             <td>
                 <br>
-                <!--<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
-                    codebase="http://download.macromedia.com/pub/shockwave/
-                    cabs/flash/swflash.cab#version=6,0,40,0"
-                    width="400" height="250"
-                    align="right"
-                    id="mymoviename3">
-                    <param name="movie3" 
-                    value="lambda2_18-30_slices.swf" />
-                    <param name="quality" value="high" />
-                    <param name="bgcolor" value="#ffffff" />
-                    <embed src="lambda2_18-30_slices.swf" quality="high" bgcolor="#ffffff"
-                    width="400" height="250"
-                    name="mymoviename3" align="center" type="application/x-shockwave-flash"
-                    pluginspage="http://www.macromedia.com/go/getflashplayer">
-                    </embed>
-                </object>-->
                 
                 <h2>Journal Papers</h2>
                     <p>
@@ -399,8 +361,6 @@
             </td>
             </tr>
             
-<!--         </td> -->
-<!--         </tr> -->
         </tbody>
         </table>
         </div>

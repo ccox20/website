@@ -21,34 +21,39 @@
     <table class="layout">
     <tbody>
     <tr>
-        <td id="navbartd">
-            <div class="topnav">
-<!--                 <a href="http://www.gwu.edu/">GWU</a> -->
-<!--                 <a href="http://mae.seas.gwu.edu/">MAE</a> -->
-<!--                 <a href="http://cobweb.seas.gwu.edu/~bdlabs/">BDL</a> -->
-<!--                 <a href="http://home.gwu.edu/~chliang/">CAHL</a> -->
-<!--                 <a href="contact.html">CONTACT</a> -->
-                <a href="cv_ccox.pdf">CV</a>
-                <a href="publications.html">PUBLICATIONS</a>
-                <a href="research.html">RESEARCH</a>
-                <a href="biography.html" id="selected">BIO</a>
-                <a href="index.html">HOME</a>
-            </div>
-
-            <!--<div id="navbar">
-                <a href="index.html" id="selected">BIO</a>
-                <a href="publications.html">PUBLICATIONS</a>
-                <a href="http://home.gwu.edu/~chliang/">CAHL</a>
-                <a href="http://cobweb.seas.gwu.edu/~bdlabs/">BDL</a>
-                <a href="http://mae.seas.gwu.edu/">MAE</a>
-                <a href="http://www.gwu.edu/">GWU</a>
-            </div>-->
-        </td>
+        <div class="navbar-wrapper" style="height:40px;">
+        <div id="navbar">
+            <a href="cv_ccox.pdf">CV</a>
+            <a href="publications.html">PUBLICATIONS</a>
+            <a href="research.html">RESEARCH</a>
+            <a href="biography.html" id="selected">BIO</a>
+            <a href="index.html">HOME</a>
+        </div>
+        </div>
         
         <div id="main">
         <table>
         <tbody>
-        
+            
+            <script>
+            // When the user scrolls the page, execute myFunction 
+                window.onscroll = function() {myFunction()};
+
+                // Get the navbar
+                var navbar = document.getElementById("navbar");
+
+                // Get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+
+                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
         
             <!-- Slideshow container -->
             <div class="slideshow-container">
@@ -168,20 +173,8 @@
                     BS, <a href="http://mane.rpi.edu/">Aeronautical &amp; Mechanical Engineering</a>, <a href="http://www.rpi.edu/">Rensselaer Polytechnic Institute</a><br>
                     <br>
                     
-<!--                    <table class="download">-->
-<!--                        <tbody><tr>-->
-<!--                        <td class="download"><a href="cv_ccox.pdf" title="cv-ccox"></a></td>-->
-<!--                        <td><em>Curriculum vitae</em></td>-->
-<!--                        </tr></tbody>-->
-<!--<!--                         <a href="curved_pipe_iso_vorticity_fps2.avi">pulsatile_flow</a> -->
-<!--<!--                         <embed src="curved_pipe_iso_vorticity_fps2.swf" height=108 width=33% controller=false  -->
-<!--<!--                         autoplay=true playeveryframe=false pluginspage="oops.html" loop=palindrome>  -->
-<!--                    </table>-->
-<!--                    <br>-->
-                    
                 <h2>Awards &amp; Honors</h2>
-                    <p> <!-- <ul style="list-style-type:none"> -->
-<!--                     <ul> -->
+                    <p>
                     The George Washington University Presidential Merit Fellowship, 2011-2017<br>
                     The George Washington University Douglas L. Jones Endowed Scholarship, 2016-2017<br>
                     The George Washington University Graduate Research Theoretical Award, 1st Place, 2015<br>
@@ -191,13 +184,11 @@
                     Rensselaer Polytechnic Institute Dean's Scholarship, 1998-2002<br>
                     Sigma Gamma Tau National Aerospace Engineering Honor Society, 2000<br>
                     Pi Tau Sigma International Mechanical Engineering Honor Society, 2000<br>
-<!--                     </ul> -->
                     </p>
                     <br>
                     
                 <h2>Academic Positions</h2>
-                    <p> <!-- <ul style="list-style-type:none"> -->
-<!--                     <ul> -->
+                    <p>
                     Postdoctoral Research Scientist, 2018-present<br>
                         The George Washington University<br>
                         Department of Mechanical &amp; Aerospace Engineering<br>
@@ -225,32 +216,26 @@
                         Department of Mechanical, Aerospace and Nuclear Engineering<br>
                         <a href="http://www.rpi.edu/~hirsaa/">Experimental Fluid Mechanics Laboratory</a>
                     <br><br>
-<!--                     </ul> -->
 
                     <p>
                     <u>Teaching Assistant - The George Washington University</u>
                     </p>
-<!--                     <ul> -->
                     APSC 6213 (<em>graduate</em>), Analytical Methods in Engineering III - Partial Differential Equations, Fall 2014<br>
                     APSC 6212 (<em>graduate</em>), Analytical Methods in Engineering II - Linear Algebra, Spring 2014<br>
                     MAE 3126 (<em>undergraduate</em>), Fluid Mechanics I, Fall 2013 and Fall 2016<br>
-<!--                     </ul> -->
                     </p>
                     <br>
                     
                 <h2>Industry Positions</h2>
-                    <p> <!-- <ul style="list-style-type:none"> -->
-<!--                     <ul> -->
+                    <p>
                     Quantitative Research Analyst, McGowan Investors, 2008-2010<br>
                     Quantitative Research Analyst, Volare Capital Management, 2006-2008<br>
                     Design &amp; Project Engineer, Pratt &amp; Whitney - United Technologies Corporation, 2001<br>
-<!--                     </ul> -->
                     </p>
                     <br>
                     
                 <h2>Professional Activities</h2>
-                    <p> <!-- <ul style="list-style-type:none"> -->
-<!--                     <ul> -->
+                    <p>
                     Peer Reviewer, Journal of Computational Physics<br>
                     Peer Reviewer, Journal of Computers & Fluids<br>
                     Peer Reviewer, AIAA Aerospace Sience Meeting<br>
@@ -259,17 +244,12 @@
                     Member, American Physical Society<br>
                     Session Chair, ASME Pressure Vessels and Piping Conference, 2012<br>
                     Judge, The George Washington University SEAS R&amp;D Showcase, 2018<br>
-<!--                     </ul> -->
                     </p>
                     <br>
-                
-<!--                 <img src="cahl_group.jpg" class="picture" title="cahl_group" width=900px> -->
 
             </td>
             </tr>
             
-<!--         </td> -->
-<!--         </tr> -->
         </tbody>
         </table>
         </div>
