@@ -118,11 +118,11 @@ table { border-collapse: collapse; }
 }
 
 #navbar a:hover {
-    color: #8890D7;
+    color: #A2A2A2; /*#8890D7;*/
 }
 
 #navbar a#selected {
-    color: #8890D7;
+    color: #A2A2A2; /*#8890D7;*/
 }
 
 table.layout td {
