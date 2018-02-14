@@ -83,9 +83,17 @@
                     <div class="text"></div>
                 </div>
 
+                <div class="mySlides fade" align="center">
+                    <div class="numbertext"></div>
+                    <figure class="slick-slide">
+                        <img src="streamlines_wec_t26_300dpi.png" class="picture" height=350px>
+                    </figure>
+                    <div class="text"></div>
+                </div>
+                
                 <!-- Next and previous buttons -->
-<!--            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
-<!--            <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+<!--                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+<!--                 <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
                 
             </div>
             <br>
@@ -95,29 +103,41 @@
                 <span class="dot" onclick="currentSlide(1)"></span> 
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
             
             <script type-"text/javascript">
             
-                var slideIndex = 0;
-                //showSlides(slideIndex);
-                showSlides2();
+                var slideIndex;
+                var n;
+                var myTimer;
+                
+                slideIndex = 1;
+                
+                showSlides();
                 
                 // Next/previous controls
-                function plusSlides(n) {
-                showSlides(slideIndex += n);
-                }
+                //function plusSlides(n) {
+                //    showSlides(slideIndex += n);
+                //}
 
                 // Thumbnail image controls
                 function currentSlide(n) {
-                showSlides(slideIndex = n);
+                    slideIndex = n;
+                    showSlides(slideIndex);
                 }
                 
                 //STATIC/ON-CLICK SLIDESHOW
                 function showSlides(n) {
                     var i;
-                    var slides = document.getElementsByClassName("mySlides");
-                    var dots = document.getElementsByClassName("dot");
+                    var slides;
+                    var dots;
+                    var myTimerValue;
+                    
+                    clearTimeout(myTimer);
+                    
+                    slides = document.getElementsByClassName("mySlides");
+                    dots = document.getElementsByClassName("dot");
                     
                     if (n > slides.length) {slideIndex = 1} 
                     if (n < 1) {slideIndex = slides.length}
@@ -131,13 +151,18 @@
                     
                     slides[slideIndex-1].style.display = "block"; 
                     dots[slideIndex-1].className += " active";
+                    
+                    myTimer = setTimeout(showSlides2, 6000);
                 }
-
+                
                 //ANIMATING SLIDESHOW IMAGES
                 function showSlides2() {
                     var i;
-                    var slides = document.getElementsByClassName("mySlides");
-                    var dots = document.getElementsByClassName("dot");
+                    var slides;
+                    var dots;
+                    
+                    slides = document.getElementsByClassName("mySlides");
+                    dots = document.getElementsByClassName("dot");
                     
                     for (i = 0; i < slides.length; i++) {
                         slides[i].style.display = "none"; 
@@ -152,9 +177,11 @@
                     slides[slideIndex-1].style.display = "block";
                     dots[slideIndex-1].className += " active";
                     
-                    var myTimer = setTimeout(showSlides2, 6000);
+                    myTimer = setTimeout(showSlides2, 6000);
                 }
+                
             </script>
+            
             
             <tr>
             <td>
