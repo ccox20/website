@@ -132,7 +132,7 @@
                     var i;
                     var slides;
                     var dots;
-                    var myTimerValue;
+                    var myTimerValue=10000;
                     
                     clearTimeout(myTimer);
                     
@@ -152,7 +152,7 @@
                     slides[slideIndex-1].style.display = "block"; 
                     dots[slideIndex-1].className += " active";
                     
-                    myTimer = setTimeout(showSlides2, 6000);
+                    myTimer = setTimeout(showSlides2, myTimerValue);
                 }
                 
                 //ANIMATING SLIDESHOW IMAGES
@@ -160,6 +160,7 @@
                     var i;
                     var slides;
                     var dots;
+                    var myTimerValue=10000;
                     
                     slides = document.getElementsByClassName("mySlides");
                     dots = document.getElementsByClassName("dot");
@@ -177,7 +178,7 @@
                     slides[slideIndex-1].style.display = "block";
                     dots[slideIndex-1].className += " active";
                     
-                    myTimer = setTimeout(showSlides2, 6000);
+                    myTimer = setTimeout(showSlides2, myTimerValue);
                 }
                 
             </script>
