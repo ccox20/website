@@ -191,6 +191,19 @@ table td.profile a {
     margin-left: 50px; /* Half the width */
 }
 
+
+/* SLIDESHOW IMAGES************************************************************/
+table.slideshow-img td {
+    padding: 10px 25px;
+    vertical-align: middle;
+}
+table td.slideshow-img a {
+    display: block;
+    background-position: center center;
+    background-size: cover;
+}
+
+
 img.picture_profile{
     float: center;
     border: 0px solid black;
