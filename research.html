@@ -34,26 +34,6 @@
         <div id="main">
         <table>
         <tbody>
-        
-            <script>
-            // When the user scrolls the page, execute myFunction 
-                window.onscroll = function() {myFunction()};
-
-                // Get the navbar
-                var navbar = document.getElementById("navbar");
-
-                // Get the offset position of the navbar
-                var sticky = navbar.offsetTop;
-
-                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-                function myFunction() {
-                    if (window.pageYOffset >= sticky) {
-                        navbar.classList.add("sticky")
-                    } else {
-                        navbar.classList.remove("sticky");
-                    }
-                }
-            </script>
             
             <!-- Slideshow container -->
             <div class="slideshow-container">
@@ -63,7 +43,7 @@
                     <div class="numbertext"></div>
                     <figure class="slick-slide">
                         <a href="cylbox_mesh_c.png">
-                            <img src="cylbox_mesh_c.png" class="slideshow-img" height=898px>
+                            <img src="cylbox_mesh_c.png" class="slideshow-img" width=895px height=auto>
                         </a>
                     </figure>
                     <div class="text"></div>
@@ -73,7 +53,7 @@
                     <div class="numbertext"></div>
                     <figure class="slick-slide">
                         <a href="cylbox_mesh_vort_c.png">
-                            <img src="cylbox_mesh_vort_c.png" class="slideshow-img" width=898px height=auto>
+                            <img src="cylbox_mesh_vort_c.png" class="slideshow-img" width=895px height=auto>
                         </a>
                     </figure>
                     <div class="text"></div>
@@ -83,7 +63,7 @@
                     <div class="numbertext"></div>
                     <figure class="slick-slide">
                         <a href="doubleshearlayer_128x128_N4_t1-8_Re10000.png">
-                            <img src="doubleshearlayer_128x128_N4_t1-8_Re10000.png" class="slideshow-img" height=600px width=auto>
+                            <img src="doubleshearlayer_128x128_N4_t1-8_Re10000.png" class="slideshow-img" width=auto height=auto>
                         </a>
                     </figure>
                     <div class="text"></div>
@@ -93,7 +73,7 @@
                     <div class="numbertext"></div>
                     <figure class="slick-slide">
                         <a href="taylorgreen_vort_16x16.png">
-                            <img src="taylorgreen_vort_16x16.png" class="slideshow-img" height=600px width=auto>
+                            <img src="taylorgreen_vort_16x16.png" class="slideshow-img" width=auto height=auto>
                         </a>
                     </figure>
                     <div class="text"></div>
@@ -113,83 +93,6 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(4)"></span>
             </div>
-            
-            <script type-"text/javascript">
-            
-                var slideIndex;
-                var n;
-                var myTimer;
-                
-                slideIndex = 1;
-                
-                showSlides();
-                
-                // Next/previous controls
-                //function plusSlides(n) {
-                //    showSlides(slideIndex += n);
-                //}
-
-                // Thumbnail image controls
-                function currentSlide(n) {
-                    slideIndex = n;
-                    showSlides(slideIndex);
-                }
-                
-                //STATIC/ON-CLICK SLIDESHOW
-                function showSlides(n) {
-                    var i;
-                    var slides;
-                    var dots;
-                    var myTimerValue=10000;
-                    
-                    clearTimeout(myTimer);
-                    
-                    slides = document.getElementsByClassName("mySlides");
-                    dots = document.getElementsByClassName("dot");
-                    
-                    if (n > slides.length) {slideIndex = 1} 
-                    if (n < 1) {slideIndex = slides.length}
-                    
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none"; 
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    
-                    slides[slideIndex-1].style.display = "block"; 
-                    dots[slideIndex-1].className += " active";
-                    
-                    myTimer = setTimeout(showSlides2, myTimerValue);
-                }
-                
-                //ANIMATING SLIDESHOW IMAGES
-                function showSlides2() {
-                    var i;
-                    var slides;
-                    var dots;
-                    var myTimerValue=10000;
-                    
-                    slides = document.getElementsByClassName("mySlides");
-                    dots = document.getElementsByClassName("dot");
-                    
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none"; 
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    
-                    slideIndex++;
-                    if (slideIndex > slides.length) {slideIndex = 1} 
-                    
-                    slides[slideIndex-1].style.display = "block";
-                    dots[slideIndex-1].className += " active";
-                    
-                    myTimer = setTimeout(showSlides2, myTimerValue);
-                }
-                
-            </script>
             
             <tr>
             <td>
@@ -251,6 +154,10 @@
 
             </td>
             </tr>
+            
+            <!-- EXECUTE JAVASCRIPT -->
+            <script src="sticky-navbar.js"></script>
+            <script src="slideshow.js"></script>
             
         </tbody>
         </table>
