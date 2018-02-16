@@ -1,6 +1,4 @@
 // When the user scrolls the page, execute myFunction
-var i;
-
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
