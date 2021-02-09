@@ -185,8 +185,8 @@ table td.profile a {
     position: center;
     top: 0%;
     left: 0%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin-top: 0px; /* Half the height */
     margin-left: 50px; /* Half the width */
 }
